@@ -1,0 +1,83 @@
+<!doctype html>
+<!--   -->
+<html>
+	<head>
+		<!-- Logika naslova - ako aplikacija šalje title, iskoristi ga, ako ne, default je "Dobrodošli u matišu!" -->
+		{% if title %}
+		<title>matiša - {{ title }}</title>
+		{% else %}
+		<title>Dobrodošli u matišu!</title>
+		{% endif %}
+		
+		<!--  Učitaj css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}"/>
+		<!--  Učitaj google-font Roboto -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+		<!--  Učitaj favicon -->
+		<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='media/favicon.ico') }}">
+	</head>
+	<body>
+	
+		<!--  OMOTAČ koji dijeli od pozadine -->
+		<div id="glavni">
+		
+			<!-- HEADER - logo i navbar -->
+			<header class="primary-header">
+				<div class="container">
+					<div class="nav-wrapper">
+						<!--  Logo -->
+						<a href="/index"><img src="{{ url_for('static', filename='media/logo-light-theme.svg') }}" id="logo" alt="matiša"></a>
+						<div class="pad">
+							<!--  Gumb za toggle navigaciju u mobile načinu -->
+							<div>
+								<img src="{{ url_for('static', filename='media/more.svg') }}" onclick="showNavHeader()" id="show-more-header" alt="dropdown">	
+							</div>
+							<!--  Glavna navigacija -->
+							<nav class="primary-navigation" id="primary-navigation">
+								 <ul aria-label="Primary" role="list" class="nav-list">
+									<li><a href="{{ url_for('index') }}">Početna</a></li>
+									{% if current_user.is_anonymous %}
+									<li><a href="{{ url_for('login') }}">Prijava</a></li>
+									{% else %}
+									<a href="{{ url_for('logout') }}">Odjava</a>
+									{% endif %}
+									<li><a href="{{ url_for('exercise') }}">Zadaci</a></li>
+									<li><a href="{{ url_for('lections') }}">Lekcije</a></li>
+									<li><a href="{{ url_for('archive') }}">Arhiva</a></li>
+									<!--<li><a href="{{ url_for('tips') }}">Pro tips</a></li>-->
+								 </ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- HEADER - kraj -->
+			<hr>
+			
+			<!--  Flashaj poruke, ako ih ima -->
+			{% with messages = get_flashed_messages() %}
+			{% if messages %}
+			<ul class="messages">
+				{% for message in messages %}
+				<li>{{ message }}</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+			{% endwith %}
+			
+			<main>
+			<!--  SADRŽAJ - tu će djeca ubaciti svoj sadržaj -->
+			{% block app_content %}
+			
+			{% endblock %}
+			<!--  SADRŽAJ - kraj -->
+			</main>
+		
+		<!--  OMOTAČ - kraj omotača koji dijeli od pozadine -->		
+		</div>
+	<!--  Učitaj js pred kraj body-a da se DOM učita -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>	
+	</body>
+</html>

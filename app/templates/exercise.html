@@ -1,0 +1,904 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+	<section class="padding-block-200">
+		<div class="container">
+			<h1>Zadaci po temama:</h1>
+			
+			<!-- 1. Skupovi -->
+			<div class="content-container">
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">1. SKUPOVI
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/1 Skupovi/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">3</p>
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/1 Skupovi/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">NE</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/1 Skupovi/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">[-10, 2></p>
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+						
+							<img src="{{ url_for('static', filename='zadaci/1 Skupovi/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/1 Skupovi/4_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>	
+
+			<!-- 2. Osnovni račun -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">2. OSNOVNI RAČUN
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/2 Osnovni račun/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">10.81</p>
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/2 Osnovni račun/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">9.639 kg</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/2 Osnovni račun/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">211.20 €</p>
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/2 Osnovni račun/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">11:13</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>			
+			
+			<!-- 3. Algebarski izrazi -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">3. ALGEBARSKI IZRAZI
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/3 Algebarski izrazi/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">7.73</p>
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/3 Algebarski izrazi/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/3 Algebarski izrazi/2_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/3 Algebarski izrazi/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">1</p>
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/3 Algebarski izrazi/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/3 Algebarski izrazi/4_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- 4. Potencije -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">4. POTENCIJE
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/4 Potencije/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/4 Potencije/1_r.svg') }}" class="hide solution">
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/4 Potencije/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/4 Potencije/2_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/4 Potencije/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">450</p>
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/4 Potencije/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">18.54 puta</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- 5. Jednadžbe -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">5. JEDNADŽBE
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/5 Jednadžbe/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">x = -8.44</p>
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/5 Jednadžbe/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">5.4</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/5 Jednadžbe/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">1</p>
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/5 Jednadžbe/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/5 Jednadžbe/4_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- 6. Sustavi jednadžbi -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">6. SUSTAVI JEDNADŽBI
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/6 Sustavi jednadžbi/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">35</p>
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/6 Sustavi jednadžbi/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/6 Sustavi jednadžbi/2_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/6 Sustavi jednadžbi/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">18</p>
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/6 Sustavi jednadžbi/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">7.38</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- 7. Nejednadžbe -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">7. NEJEDNADŽBE
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/7 Nejednadžbe/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">x < -6</p>
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/7 Nejednadžbe/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">x∈[8.5,∞></p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/7 Nejednadžbe/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">x∈R</p>
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/7 Nejednadžbe/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/7 Nejednadžbe/4_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- 8. Nizovi -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">8. NIZOVI
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/8 Nizovi/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/8 Nizovi/1_r.svg') }}" class="hide solution">
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/8 Nizovi/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/8 Nizovi/2_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/8 Nizovi/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/8 Nizovi/3_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/8 Nizovi/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">q = -5</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- 9. Vjerojatnost -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">9. VJEROJATNOST
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/9 Vjerojatnost/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/9 Vjerojatnost/1_r.svg') }}" class="hide solution">
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/9 Vjerojatnost/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/9 Vjerojatnost/2_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/9 Vjerojatnost/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/9 Vjerojatnost/3_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/9 Vjerojatnost/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/9 Vjerojatnost/4_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<!-- 10. Geometrija -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">10. GEOMETRIJA
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/10 Geometrija/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/10 Geometrija/1_r.svg') }}" class="hide solution">
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/10 Geometrija/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/10 Geometrija/2_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/10 Geometrija/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/10 Geometrija/3_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/10 Geometrija/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/10 Geometrija/4_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>			
+			
+			<!-- 11. Stereometrija -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">11. STEREOMETRIJA
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/11 Stereometrija/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/11 Stereometrija/1_r.svg') }}" class="hide solution">
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/11 Stereometrija/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/11 Stereometrija/2_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/11 Stereometrija/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">8.04 €</p>
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/11 Stereometrija/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/11 Stereometrija/4_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>		
+		
+			<!-- 12. Prikaz podataka -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">12. PRIKAZ PODATAKA
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/12 Prikaz podataka/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">Škola B, za 0.2 sata</p>
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/12 Prikaz podataka/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">8 t</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/12 Prikaz podataka/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">5 000 000 €</p>
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/12 Prikaz podataka/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">5.26%</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>		
+		
+			<!-- 13. Uvod u koordinatni sustav -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">13. UVOD U KOORDINATNI SUSTAV
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/13 Uvod u koordinatni sustav/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">|AB| = 7.62</p>
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/13 Uvod u koordinatni sustav/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">|AB| = 7.07</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/13 Uvod u koordinatni sustav/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">P = 38.5</p>
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/13 Uvod u koordinatni sustav/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">a = 3.16</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>	
+
+			<!-- 14. Funkcije -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">14. FUNKCIJE
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/14 Funkcije/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/14 Funkcije/1_r.svg') }}" class="hide solution">
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/14 Funkcije/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/14 Funkcije/2_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/14 Funkcije/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/14 Funkcije/3_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/14 Funkcije/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">y = x + 3</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>			
+		
+		
+			<!-- 15. Vektori -->
+			<div class="content-container">
+
+				<div class="hard-center">
+					<h1 class="exercise-heading" onclick="showExercise()">15. VEKTORI
+						<img src="{{ url_for('static', filename='media/down-arrow-dark.svg') }}" class="down-arrow">	
+						<img src="{{ url_for('static', filename='media/up-arrow-dark.svg') }}" class="up-arrow remove">
+					</h1>
+					
+				</div>	
+				<div class="exercise-dropdown remove">
+				
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/15 Vektori/1.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/15 Vektori/1_r.svg') }}" class="hide solution">
+								</div>
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/15 Vektori/2.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<img src="{{ url_for('static', filename='zadaci/15 Vektori/2_r.svg') }}" class="hide solution">
+								</div>								
+							</div>	
+						</div>
+						
+					</div>	
+					<div class="even-columns">
+					
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/15 Vektori/3.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">a = 7.5, b = 0.05</p>
+								</div>								
+							</div>	
+						</div>
+						<div class="border content-container text-center">
+							<img src="{{ url_for('static', filename='zadaci/15 Vektori/4.svg') }}">
+							<div class="padding-block-300">
+								<button class="secondary-button" onclick="s_h()">Rješenje:</button>
+								<div class="solution-container">
+									<p class="solution hide">k = -3</p>
+								</div>								
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>		
+		
+		</div>
+    </section>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>Prijava</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+		<p>
+			{{ form.username.label }}<br>
+			{{ form.username(size=32) }}<br>
+			{% for error in form.username.errors %}
+			<span class="error">[{{ error }}]</span>
+			{% endfor %}
+		</p>
+		<p>
+			{{ form.password.label }}<br>
+			{{ form.password(size=32) }}<br>
+			{% for error in form.password.errors %}
+			<span class="error">[{{ error }}]</span>
+			{% endfor %}
+		</p>
+		
+		<p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+		<p>{{ form.submit() }}</p>
+	</form>
+	<p class="pad">Nemaš korisnički račun? 
+		<a href="{{ url_for('register') }}"><button class="secondary-button">Registriraj se!</button></a>
+	</p>
+	<p class="pad">Zaboravio si lozinku? 
+		<a href="{{ url_for('reset_password_request') }}"><button class="secondary-button">Resetiraj ju!</button></a>
+	</p>
+	
+
+{% endblock %}

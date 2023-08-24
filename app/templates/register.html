@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+	<h1>Register</h1>
+	<form action="" method="post">
+		{{ form.hidden_tag() }}
+		<p>
+			{{ form.username.label }}<br>
+			{{ form.username(size=32) }}<br>
+			{% for error in form.username.errors %}
+			<span sclass="error">[{{ error }}]</span>
+			{% endfor %}
+		</p>
+		<p>
+			{{ form.email.label }}<br>
+			{{ form.email(size=64) }}<br>
+			{% for error in form.email.errors %}
+			<span class="error">[{{ error }}]</span>
+			{% endfor %}
+		</p>
+		<p>
+			{{ form.password.label }}<br>
+			{{ form.password(size=32) }}<br>
+			{% for error in form.password.errors %}
+			<span class="error">[{{ error }}]</span>
+			{% endfor %}
+		</p>
+		<p>
+			{{ form.password2.label }}<br>
+			{{ form.password2(size=32) }}<br>
+			{% for error in form.password2.errors %}
+			<span class="error">[{{ error }}]</span>
+			{% endfor %}
+		</p>
+		<!-- Custom layout za radiobuttone -->
+		<p>{{ form.avatar.label }}</p>
+		<div id="avatar-list" class="scroll-container">
+			<div class="avatar-options">
+				{% for choice in form.avatar %}
+				<label class="avatar-option">
+					<!-- {{ choice.label }} -->
+					{{ choice }}
+					<img src="{{ url_for('static', filename='media/avatars/' ~ choice.id ~ '.png') }}" class="avatar {{ 'selected' if choice.checked }}" onclick="selectAvatar(this)">
+				</label>
+				{% endfor %}
+			</div>
+		</div>
+		<p>{{ form.submit() }}</p>
+	</form>
+{% endblock %}

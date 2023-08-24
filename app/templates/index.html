@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+	<section class="padding-block-200">
+		<div class="container">
+			{% if current_user.avatar != 0 %}
+			{% include '_avatar_display.html' %}
+			{% else %}
+			{% endif %}		
+			<h1>Bok, {{ current_user.username }}!</h1>
+		</div>
+		{% if current_user.last_lession_id != 0 %}
+		<a href="{{ url_for('lection', lection_id=current_user.last_lession_id) }}"><button class="secondary-button">Nastavi sa lekcijom!</button></a>
+		{% else %}
+		{% endif %}
+    </section>
+{% endblock %}

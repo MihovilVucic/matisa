@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+	<section class="padding-block-200">
+		<div class="container">
+			<h1 class="text-center">Dobrodošli u matišu!</h1>
+			<div class="content-container">
+				<h2>Što je matiša?</h2>
+				<p>matiša je aplikacija za učenje matematike. Iako se sadržaj 
+				stalno proširuje, trenutno postoje i u izradi su materijali za pripremu
+				za B razinu mature. S vremenom će biti dodani materijali za A razinu,
+				a kasnije će dodatni materijali pratiti i razrede kao redovna pomoć
+				u učenju.</p>
+			</div>
+			<div class="even-columns">
+				<div>
+					<div class="content-container">
+						<h2>Ono što ti treba</h2>
+						<p>Iako vjerujem u cjelovito znanje i razumijevanje, ponekad 
+						ne treba komplicirati - npr. pri pripremama za maturu. Zato
+						su svi materijali prilagođeni programu; sve što se tu nalazi
+						ili je direktno bilo na prijašnjoj maturi, ili je neophodno za 
+						razumijevanje nečega što je bilo na maturi. Ako prođeš sve lekcije
+						i riješiš sve zadatke, nemaš razloga za brigu - to je to.</p>
+					</div>
+					<div class="content-container">
+						<h2>Arhiva</h2>
+						<p>Sve relevantne mature, formule, mature riješene s postupcima
+						i ostali materijali</p>
+					</div>					
+				</div>
+				<div>
+					<div class="content-container">
+						<h2>Lekcije</h2>
+						<p>Lekcije s riješenim primjerima s mature</p>
+					</div>
+					<div class="content-container">
+						<h2>Zadaci</h2>
+						<p>Zbirka zadataka sličnim onima na maturi, po lekcijama</p>
+					</div>
+					<div class="content-container">
+						<h2>Pro tips</h2>
+						<p>Savjeti - kako što lakše riješiti maturu, kako se pripremiti, 
+						kako riješavati i pristupati zadacima</p>
+					</div>					
+				</div>
+			</div>
+			<div class="text-center">
+				<a href="{{ url_for('login') }}" class="navigation-button">
+					<button class="secondary-button">Prijavi se i kreni učiti!</button>
+					<img src="{{ url_for('static', filename='media/dogo.svg') }}" class="dogo">
+				</a>
+			</div>
+		</div>
+    </section>
+{% endblock %}

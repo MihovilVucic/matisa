@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+	<section class="padding-block-200">
+		<div class="container">
+			<div class="columns">
+				<div class="dropdown text-center">
+					<h1 id="heading">Lekcija {{ lection_id }}</h1>	
+					<div>
+						<img src="{{ url_for('static', filename='media/more.svg') }}" onclick="showNav()" id="show-more">	
+					</div>
+					{% include '_side_nav.html' %}
+				</div>
+				 
+				<div id="lection-container">
+					<!-- Lekcija u svg formatu koja se dinamički loada ovisno o url-u -->
+					<img src="{{ url_for('static', filename='lections/' ~ lection_id ~ '.svg') }}" id="lection">	
+					<hr>
+					<!-- Gumbi prije i poslije koji se dinamički loadaju ako postoje lekcije prije i poslije -->
+					<div class="center">
+						{% if has_previous %}
+						<a href="{{ url_for('lection', lection_id=previous_lection_id_string) }}" class="navigation-button"><button class="secondary-button">Prethodna lekcija</button></a>
+						{% endif %}
+
+						{% if has_next %}
+						<a href="{{ url_for('lection', lection_id=next_lection_id_string) }}" class="navigation-button"><button class="secondary-button">Sljedeća lekcija</button></a>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+	
+{% endblock %}

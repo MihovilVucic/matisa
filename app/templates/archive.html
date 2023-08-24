@@ -1,0 +1,739 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+	<section class="padding-block-200">
+		<div class="container">
+			<h1 class="text-center">Dobrodošli u arhivu!</h1>
+
+			<div class="content-container">
+				<div class="hard-center">
+					<h1 class="archive-heading">B mature</h1>
+					<a href="{{ url_for('static', filename='arhiva/B/formule.pdf') }}" target="_blank">
+						<div class="archive-link-wrapper">	
+							<img src="{{ url_for('static', filename='arhiva/formule_ico.svg') }}">
+							<h4>formule</h4>
+						</div>
+					</a>
+				</div>	
+				
+				<div class="even-columns">
+				
+					<div class="border">
+						<h2>2015</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/15lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/15lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/15j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/15j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="border">
+						<h2>2016</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/16lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/16lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/16j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/16j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+				<div class="even-columns">
+				
+					<div class="border">
+						<h2>2017</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/17lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/17lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/17lj_postupak.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/postupak_ico.svg') }}">
+										<h4>postupak</h4>
+									</div>
+								</a>								
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/17j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/17j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="border">
+						<h2>2018</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/18lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/18lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/18j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/18j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>				
+
+				<div class="even-columns">
+				
+					<div class="border">
+						<h2>2019</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/19lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/19lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/19j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/19j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="border">
+						<h2>2020</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/20lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/20lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/10j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/20j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="even-columns">
+				
+					<div class="border">
+						<h2>2021</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/21lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/21lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/21j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/21j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="border">
+						<h2>2022</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/22lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/22lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/22j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/22j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="even-columns">
+				
+					<div class="border">
+						<h2>2023</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/23lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/23lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/23j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/B/23j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Probna</h3>
+								<a href="{{ url_for('static', filename='arhiva/B/23p_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			
+			<div class="content-container">
+				<div class="hard-center">
+					<h1 class="archive-heading">A mature</h1>
+					<a href="{{ url_for('static', filename='arhiva/A/formule.pdf') }}" target="_blank">
+						<div class="archive-link-wrapper">	
+							<img src="{{ url_for('static', filename='arhiva/formule_ico.svg') }}">
+							<h4>formule</h4>
+						</div>
+					</a>
+				</div>	
+				
+				<div class="even-columns">
+				
+					<div class="border">
+						<h2>2015</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/15lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/15lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/15j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/15j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="border">
+						<h2>2016</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/16lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/16lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/16j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/16j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+				<div class="even-columns">
+				
+					<div class="border">
+						<h2>2017</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/17lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/17lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>							
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/17j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/17j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="border">
+						<h2>2018</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/18lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/18lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/18j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/18j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>				
+
+				<div class="even-columns">
+				
+					<div class="border">
+						<h2>2019</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/19lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/19lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/19j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/19j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="border">
+						<h2>2020</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/20lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/20lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/10j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/20j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="even-columns">
+				
+					<div class="border">
+						<h2>2021</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/21lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/21lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/21j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/21j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="border">
+						<h2>2022</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/22lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/22lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/22j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/22j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="even-columns">
+				
+					<div class="border">
+						<h2>2023</h2>
+						<div class="sticky-even-columns content-container">
+							<div>
+								<h3>Ljeto</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/23lj_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/23lj_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Jesen</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/23j_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+								<a href="{{ url_for('static', filename='arhiva/A/23j_rj.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/rjesenja_ico.svg') }}">
+										<h4>rješenja</h4>
+									</div>
+								</a>
+							</div>
+							<div>
+								<h3>Probna</h3>
+								<a href="{{ url_for('static', filename='arhiva/A/23p_test.pdf') }}" target="_blank">
+									<div class="archive-link-wrapper">	
+										<img src="{{ url_for('static', filename='arhiva/test_ico.svg') }}">
+										<h4>test</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+    </section>
+{% endblock %}
